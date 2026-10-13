@@ -37,7 +37,7 @@
               text: '#3A3835',
               muted: '#8A857D',
               subtle: '#B8B3AB',
-              accent: '#8C4336', // 無印經典深紅赭色
+              accent: '#8C4336', // 無印深紅赭色
               accentLight: '#FBF0EE',
               warm: '#F1EDE6',
               tag: '#E5DFD5'
@@ -158,7 +158,19 @@
         </div>
       </article>
 
-      <!-- 導覽 3: 美山茅葺之里 -->
+      <!-- 導覽 3: átoa 水族館 -->
+      <article class="bg-white rounded-2xl p-5 border border-muji-border/70 shadow-sm space-y-3">
+        <div class="flex justify-between items-start">
+          <span class="text-[10px] tracking-wider font-semibold text-muji-accent bg-muji-accentLight px-2 py-0.5 rounded">藝術水族館</span>
+          <span class="text-xs text-muji-muted">神戶・港灣區</span>
+        </div>
+        <h3 class="text-base font-serif font-bold text-muji-text">átoa：水族藝術劇場</h3>
+        <p class="text-xs text-muji-text/80 leading-relaxed font-light">
+          名稱結合了 Aquarium（水族館）與 to Art（藝術）。館內結合數位藝術、光影舞美、雷射與生物展演，其中位於「奇蹟之行星（MIYABI）」區擁有全日本最大規模的球體水槽「AQUA TERRA」，如置身夢幻宇宙水世界。
+        </p>
+      </article>
+
+      <!-- 導覽 4: 美山茅葺之里 -->
       <article class="bg-white rounded-2xl p-5 border border-muji-border/70 shadow-sm space-y-3">
         <div class="flex justify-between items-start">
           <span class="text-[10px] tracking-wider font-semibold text-muji-accent bg-muji-accentLight px-2 py-0.5 rounded">傳統建造物群</span>
@@ -207,7 +219,7 @@
         <h3 class="text-sm font-serif font-medium text-muji-text">新增花費記帳</h3>
         
         <div class="space-y-2.5">
-          <input type="text" id="expense-title" placeholder="品項名稱 (如: 豬一離れ 拉麵、宮津超市食材)" class="w-full text-xs bg-muji-warm/30 border border-muji-border rounded-xl px-3.5 py-2.5 text-muji-text focus:outline-none focus:border-muji-accent">
+          <input type="text" id="expense-title" placeholder="品項名稱 (如: 豬一拉麵、茅乃舍高湯、超市和牛)" class="w-full text-xs bg-muji-warm/30 border border-muji-border rounded-xl px-3.5 py-2.5 text-muji-text focus:outline-none focus:border-muji-accent">
           
           <div class="flex space-x-2">
             <div class="relative flex-1">
@@ -283,6 +295,28 @@
 
     <!-- 5. INFO TAB (實用資訊) -->
     <section id="tab-info" class="space-y-4 hidden">
+      <!-- 日本優惠券專區 (新增項目) -->
+      <div class="bg-white rounded-2xl p-5 border border-muji-border shadow-sm space-y-2.5">
+        <div class="flex items-center justify-between">
+          <h2 class="text-sm font-serif font-medium text-muji-text flex items-center">
+            <i class="fa-solid fa-ticket text-muji-accent mr-2 text-xs"></i> 旅日優惠券懶人包
+          </h2>
+          <span class="text-[10px] bg-muji-accentLight text-muji-accent px-2 py-0.5 rounded font-medium">購物必備</span>
+        </div>
+        <p class="text-xs text-muji-muted font-light leading-relaxed">
+          藥妝、電器、百貨折價券總整理，結帳出示條碼享退稅＋折扣優惠。
+        </p>
+        <div class="pt-1">
+          <a href="https://infolazytv.wixsite.com/lazy-tv" target="_blank" class="flex items-center justify-between p-3 bg-muji-warm/70 border border-muji-border/70 rounded-xl text-xs text-muji-text hover:bg-muji-border/50 transition">
+            <div class="flex items-center space-x-2">
+              <i class="fa-solid fa-gift text-muji-accent text-sm"></i>
+              <span class="font-medium">開啟 LAZY TV 優惠券彙整網站</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[11px] text-muji-muted"></i>
+          </a>
+        </div>
+      </div>
+
       <!-- 飯店資訊總覽 -->
       <div class="bg-white rounded-2xl p-5 border border-muji-border shadow-sm space-y-3">
         <h2 class="text-sm font-serif font-medium text-muji-text flex items-center">
@@ -430,7 +464,7 @@
         stay: "京都｜蘇影・竹月",
         stayLink: "https://maps.app.goo.gl/1GicfaNhZ2KNzfy86",
         items: [
-          { time: "08:45 - 12:30", title: "去程航班：台中飛關西 星宇JX306", note: "準時登機前往關西，出關後與包車司機會合", highlight: true },
+          { time: "08:45 - 12:30", title: "去程航班：台中飛關西 星宇JX306", note: "準時登機前往關西機場，出關後與包車司機會合", highlight: true },
           { time: "14:00 - 16:00", title: "勝尾寺", note: "祈求勝運達摩・預計 16:00 離開", map: "https://maps.google.com/?q=勝尾寺", highlight: false },
           { time: "18:00 - 19:00", title: "晚餐：麵屋 豬一 離れ", note: "黑白醬油清甜湯頭名店", map: "https://maps.google.com/?q=麺屋+猪一+離れ", review: "https://tabelog.com/kyoto/A2601/A260201/26025219/" }
         ]
@@ -493,11 +527,12 @@
         stay: "神戶｜神戶三宮大和Roynet飯店PREMIER",
         stayLink: "https://maps.app.goo.gl/3vLczppypkbyoiv67",
         items: [
-          { time: "09:00 - 12:00", title: "神戶動物王國", note: "零距離接觸水豚、鯨頭鸛、環尾狐猴，室內花園溫室", map: "https://maps.google.com/?q=神戸どうぶつ王国" },
-          { time: "12:00 - 13:00", title: "午餐：動物園內解決", note: "園區花園餐廳享用輕食休憩" },
-          { time: "13:00 - 14:00", title: "北野異人館街", note: "西洋異國風情街區，風見雞之館與萌黃之館", map: "https://maps.google.com/?q=北野異人館街" },
-          { time: "14:00 - 15:00", title: "三宮商圈逛街", note: "三宮 Center 街採買藥妝、雜貨與伴手禮", map: "https://maps.google.com/?q=神戶三宮Center街" },
-          { time: "17:00 - 18:00", title: "晚餐：神戶牛鐵板燒 吉祥吉 三宮北通店", note: "主廚現場鐵板現煎頂級神戶牛饗宴", map: "https://maps.google.com/?q=神戶牛吉祥吉+三宮北通店", highlight: true }
+          { time: "08:00", title: "早餐：Hanikamu", note: "美味早午餐咖啡店，元氣開啟一天", map: "https://maps.google.com/?q=神戶Hanikamu咖啡" },
+          { time: "10:00", title: "神戶麵包超人兒童博物館 / 兵庫縣立美術館", note: "歡樂角色表演與麵包工坊，或前往安藤忠雄設計的兵庫縣立美術館欣賞藝術", map: "https://maps.google.com/?q=神戶麵包超人兒童博物館" },
+          { time: "12:00", title: "午餐時間", note: "港灣周邊商場或美術館周邊享用午餐" },
+          { time: "14:00", title: "神戶港走走逛逛", note: "漫步美利堅公園、BE KOBE 地標拍照打卡、欣賞港灣風光", map: "https://maps.google.com/?q=美利堅公園" },
+          { time: "16:00", title: "茅乃舍 大丸神戶店 / Step Sports Kobe", note: "大丸百貨採購極上高湯包配料，前往 Step Sports 逛專業運動跑鞋", map: "https://maps.google.com/?q=茅乃舎+大丸神戸店" },
+          { time: "18:00", title: "晚餐時間", note: "元町/三宮市區品嚐在地神戶特色料理" }
         ]
       },
       7: {
@@ -506,9 +541,11 @@
         stay: "神戶｜神戶三宮大和Roynet飯店PREMIER",
         stayLink: "https://maps.app.goo.gl/3vLczppypkbyoiv67",
         items: [
-          { time: "08:00", title: "早餐：Hanikamu", note: "精緻在地咖啡與暖心日式朝食輕食", map: "https://maps.google.com/?q=神戶Hanikamu咖啡" },
-          { time: "10:00", title: "神戶麵包超人兒童博物館＆購物商場", note: "歡樂角色表演、體驗工坊與超可愛人物造型麵包店", map: "https://maps.google.com/?q=神戶麵包超人兒童博物館", highlight: true },
-          { time: "15:00", title: "神戶港走走逛逛", note: "散步美利堅公園、BE KOBE 地標拍美照，享受神戶港海風", map: "https://maps.google.com/?q=神戶港美利堅公園" }
+          { time: "09:00", title: "北野異人館街散策", note: "尋訪 Flower bakery 麵包、風見雞之館、六甲牧場霜淇淋、北野天滿神社祈願俯瞰街景", map: "https://maps.google.com/?q=北野異人館街" },
+          { time: "10:00", title: "átoa 水族館", note: "結合數位藝術與水族生態的奇幻劇院型水族館", map: "https://maps.google.com/?q=átoa+Kobe", highlight: true },
+          { time: "12:00", title: "午餐：Takoyaki Tachibana 明石燒", note: "品嚐神戶在地特色軟嫩蛋香明石燒，沾柴魚高湯享用", map: "https://maps.google.com/?q=たこ焼+たちばな" },
+          { time: "14:00", title: "三宮商圈逛街", note: "熱門品牌採購：Mont-bell 戶外裝備、MUJI 無印良品旗艦、Uniqlo", map: "https://maps.google.com/?q=三宮Center街" },
+          { time: "18:00", title: "晚餐：神戶牛鐵板燒 吉祥吉 三宮北通店", note: "主廚現場鐵板現煎 A5 頂級神戶牛饗宴", map: "https://maps.google.com/?q=神戶牛吉祥吉+三宮北通店", highlight: true }
         ]
       },
       8: {
@@ -527,9 +564,9 @@
     const defaultPackingList = [
       "個人身分證", "護照 (效期6個月以上)", "登機證 (電子/紙本)", "國際駕駛執照 (自駕必備)", "日幣現金、信用卡、提款卡",
       "手機 + 手機背繩", "當地日本SIM卡/eSIM + 換卡針", "充電線 + 豆腐頭", "行動電源 (需隨身攜帶)", "耳機",
-      "住宿、租車、小火車預約證明", "防疫酒精濕紙巾、口罩", "個人化妝保養品、護手霜", "雨傘 (折疊傘)", "空水瓶",
+      "住宿、交通、當地活動預約證明", "防疫酒精濕紙巾、口罩", "個人化妝保養品、護手霜", "雨傘 (折疊傘)", "空水瓶",
       "牙刷、牙膏", "自拍棒", "鹽、調味料、油 (Villa自煮用)", "洗衣精/旅行洗衣粉", "延長線 (多人充電神物)",
-      "衛生紙、隨身濕紙巾", "衣架", "免洗內褲", "個人常備止痛藥/腸胃藥", "墨鏡", "刮鬍刀", "指甲剪", "AirTag (行李追蹤)"
+      "衛生紙、隨身濕紙巾", "衣架", "梳子", "毛巾", "衛生棉", "免洗內褲", "個人常備止痛藥/腸胃藥", "墨鏡", "刮鬍刀", "指甲剪", "AirTag (行李追蹤)"
     ];
 
     /* ========================================================
